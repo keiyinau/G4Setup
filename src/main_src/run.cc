@@ -68,6 +68,7 @@ void MyRunAction::CreateDataFile_SensitiveDetector(G4AnalysisManager* man)
         man->CreateNtupleIColumn("TrackID");
         man->CreateNtupleIColumn("StepID");
         man->CreateNtupleDColumn("EnergyDeposition");
+        man->CreateNtupleDColumn("ParentID");
         man->FinishNtuple(i+1);
     }
 }
