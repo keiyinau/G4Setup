@@ -89,7 +89,7 @@ void MySensentiveDetector::SaveToDataFile(G4Step* aStep, G4TouchableHistory* ROh
             man->FillNtupleDColumn(i+1, 14, preGlobalTime/ns);
 			man->FillNtupleIColumn(i+1, 15, trackID);
 			man->FillNtupleIColumn(i+1, 16, stepID);
-			man->FillNtupleDColumn(i+1, 17, edep/MeV);
+			//man->FillNtupleDColumn(i+1, 17, edep/MeV);
 			man->FillNtupleIColumn(i+1, 16, parentID);
             man->AddNtupleRow(i+1);
         }
