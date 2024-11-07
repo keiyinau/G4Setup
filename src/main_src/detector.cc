@@ -71,7 +71,7 @@ void MySensentiveDetector::SaveToDataFile(G4Step* aStep, G4TouchableHistory* ROh
             G4double preLocalTime = preStepPoint->GetLocalTime();
 			G4double preGlobalTime = preStepPoint->GetGlobalTime();
 			G4double edep=aStep -> GetDeltaEnergy();
-			G4int parentID=aStep->GetTrack()->GetParentID()
+			G4int parentID=aStep->GetTrack()->GetParentID();
 			man->FillNtupleDColumn(i+1, 0, ekin/MeV);	//MeV
             man->FillNtupleDColumn(i+1, 1, x/mm);		//mm
             man->FillNtupleDColumn(i+1, 2, y/mm);		//mm
